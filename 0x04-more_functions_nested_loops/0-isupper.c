@@ -3,13 +3,13 @@
 /**
  *_isupper - uppercase letters
  *@c: char to check
- *Return: 0 or 1
+ *Return: 1 or 0
  */
 
-int_isupper(int c)
+int_isupper(int x)
 
 {
-	if (c >= 'A' && c <= 'Z')
+	if (x >= 65 && x <= 90)
 	{
 		return (1);
 	}
