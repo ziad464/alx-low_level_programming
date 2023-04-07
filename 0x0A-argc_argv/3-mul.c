@@ -3,11 +3,10 @@
 #include"main.h"
 
 /**
- * _atoi-converts a string to an integer
+ * _atoi - converts a string to an integer
  * @s: string to be converted
  *
- *
- * Return: the int converted
+ * Return: the int converted from the string
  *
  */
 int _atoi(char *s)
@@ -24,19 +23,14 @@ int _atoi(char *s)
 	f = 0;
 	digit = 0;
 
-
 	while (s[len] != '\0')
-
 		len++;
 	while (i < len && f == 0)
 	{
 		if (s[i] == '-')
-
 			++d;
-
 		if (s[i] >= '0' && s[i] <= '9')
 		{
-
 			digit = s[i] - '0';
 			if (d % 2)
 				digit = -digit;
@@ -45,21 +39,19 @@ int _atoi(char *s)
 			if (s[i + 1] < '0' || s[i + 1] > '9')
 				break;
 			f = 0;
-
 		}
 		i++;
 	}
 	if (f == 0)
 		return (0);
-
 	return (n);
 }
 /**
- * main-multiplies two numbers
- * @argc:number of arguments
- * @argv:array of arguments
+ * main - multiplies two numbers
+ * @argc: number of arguments
+ * @argv: array of arguments
  *
- * Return: 0(Success), 1(Error)
+ * Return: 0 (Success), 1 (Error)
  */
 
 int main(int argc, char *argv[])
@@ -76,7 +68,6 @@ int main(int argc, char *argv[])
 	num2 = _atoi(argv[2]);
 	result = num1 * num2;
 
-
-	printf(" % d\n", result);
+	printf("%d\n", result);
 	return (0);
 }
