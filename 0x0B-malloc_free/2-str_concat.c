@@ -1,12 +1,12 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * *creat_array -creates an array of chars,
- * and intializes it whith a specific char.
- * @size: size of the array
- * @c: char to initialize
- * Return: pointer to the array initialized or NULL
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
+
 char *str_concat(char *s1, char *s2)
 {
 	char *conct;
