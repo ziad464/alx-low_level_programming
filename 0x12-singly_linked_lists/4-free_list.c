@@ -1,5 +1,6 @@
-#include<stdlib.h>
-#include"lists.h"
+#include <stdlib.h>
+#include "lists.h"
+
 /**
  * free_list - frees a linked list
  * @head: list_t list to be freed
@@ -9,7 +10,7 @@
 
 void free_list(list_t *head)
 {
-	list_t *node, *next_node;
+list_t *node, *next_node;
 
 	if (!head)
 		return;
@@ -20,6 +21,6 @@ void free_list(list_t *head)
 		next_node = node->next;
 		free(node->str);
 		free(node);
-		node = next_node
+		node = next_node;
 	}
 }
